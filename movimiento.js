@@ -83,3 +83,13 @@ async function enviarMensaje() {
     }
 
 }
+
+
+
+function mostrarProximamente() {
+    document.getElementById("proximamente").style.display = "flex";
+}
+
+function cerrarProximamente() {
+    document.getElementById("proximamente").style.display = "none";
+}
