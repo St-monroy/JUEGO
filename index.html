@@ -29,32 +29,32 @@
             <div class="slider-track">
                 <div class="slide-item" style="background-image: url('protagonita.png');">
                     <div class="content">
-                        <div class="name">Sonic the Hedgehog</div>
-                        <div class="des">Sonic lucha contra el malvado científico Dr. Eggman para evitar que conquiste el mundo y libere a los animales atrapados.</div>
+                        <div class="name">Gregor/Gregory</div>
+                        <div class="des">Gregor es un muchacho que vive con sus padres, este termina experimentando cosas que lo cambiarán de por vida</div>
                         <button>Ver más</button>
                     </div>
                 </div>
 
                 <div class="slide-item" style="background-image: url('padres.png');">
                     <div class="content">
-                        <div class="name">Sonic 2</div>
-                        <div class="des">Sonic 2 (1992) introduce a Tails. Ambos deben detener al Dr. Robotnik y destruir la estación espacial Death Egg.</div>
+                        <div class="name">Padres De Gregor</div>
+                        <div class="des">Los padres de gregor tienen un papel crucial en la historia por ser el pilar principal en la vida de gregor</div>
                         <button>Ver más</button>
                     </div>
                 </div>
 
                 <div class="slide-item" style="background-image: url('entidades.png');">
                     <div class="content">
-                        <div class="name">Sonic 3 & Knuckles</div>
-                        <div class="des">La aventura continúa en Angel Island, donde Sonic conoce a Knuckles el Equidna mientras detiene la reconstrucción de la Death Egg.</div>
+                        <div class="name">Entidades</div>
+                        <div class="des">Las entidades son manifestaciones que se presentan en la vida de gregor a medida que pasa la historia</div>
                         <button>Ver más</button>
                     </div>
                 </div>
 
                 <div class="slide-item" style="background-image: url('imagen4.jpg');">
                     <div class="content">
-                        <div class="name">SONIC MANIA</div>
-                        <div class="des">Sonic, Tails y Knuckles deben destruir los robots de élite Hard-Boiled Heavies y recuperar el Rubí Fantasma.</div>
+                        <div class="name">Alguien más...</div>
+                        <div class="des">¿Quién eres?</div>
                         <button>Ver más</button>
                     </div>
                 </div>
@@ -66,7 +66,6 @@
             </div>
         </div> 
     </main>
-
 
     <footer class="footer">
         <div class="footer-box">
@@ -93,34 +92,29 @@
             </div>
         </div>
 
-       </footer>
 
-    <!-- Botón flotante -->
-    <div id="boton-chat" onclick="abrirChat()">
-        💬
+        <div id="boton-chat" onclick="abrirChat()">
+    💬
+</div>
+
+<div id="chat">
+    <div class="encabezado">
+        Chat
+        <button onclick="cerrarChat()">✖</button>
     </div>
 
-    <!-- Ventana del chat -->
-    <div id="chat">
-        <div class="encabezado">
-            <span>Chat</span>
-            <button onclick="cerrarChat()">✖</button>
-        </div>
-
-        <div class="mensajes" id="mensajes">
-            <p><strong>IA:</strong> Hola, ¿en qué puedo ayudarte?</p>
-        </div>
-
-        <div class="entrada">
-            <input
-                type="text"
-                id="mensaje"
-                placeholder="Escribe un mensaje..."
-                onkeydown="if(event.key==='Enter') enviarMensaje()">
-
-            <button onclick="enviarMensaje()">Enviar</button>
-        </div>
+    <div class="mensajes" id="mensajes">
+        <p>Hola, ¿en qué puedo ayudarte?</p>
     </div>
+
+    <input
+        type="text"
+        id="mensaje"
+        placeholder="Escribe un mensaje..."
+        onkeydown="if(event.key==='Enter') enviarMensaje()">
+</div>
+
+    </footer>
 
 </body>
 </html>
