@@ -12,6 +12,8 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <script defer src="movimiento.js"></script>
 </head>
 
@@ -19,20 +21,14 @@
 
     <!-- BARRA DE NAVEGACIÓN -->
     <header class="navbar">
-
-        <div class="logo">
-            <a href="index.html">SSRCM</a>
-        </div>
-
+<img src="ChatGPT Image Aug 21, 2026, 07_52_27 AM (1).png" id="ch">
         <nav id="menu">
             <ul>
                 <li>
                     <a href="index.html" class="active">Inicio</a>
                 </li>
 
-                <li>
-                    <a href="ofertas.html">Servicios</a>
-                </li>
+              
 
                 <li>
                     <a href="formulario.html">Formulario</a>
@@ -50,9 +46,15 @@
             <div class="slider-track">
                 <div class="slide-item" style="background-image: url('protagonita.png');">
                     <div class="content">
+<<<<<<< HEAD
                         <div class="name">Gregor/Gregory</div>
                         <div class="des">Gregor es un muchacho que vive con sus padres, este termina experimentando cosas que lo cambiarán de por vida</div>
                         <button>Ver más</button>
+=======
+                        <div class="name">Gregor</div>
+                        <div class="des">Gregor es un muchacho que vive con sus padres, este termina experimentando cosas que lo cambiarán de por vida</div>
+                      <a href="proximamente.html">  <button>Ver más</button></a>
+>>>>>>> 6347bce (l)
                     </div>
                 </div>
 
@@ -60,7 +62,11 @@
                     <div class="content">
                         <div class="name">Padres De Gregor</div>
                         <div class="des">Los padres de gregor tienen un papel crucial en la historia por ser el pilar principal en la vida de gregor</div>
+<<<<<<< HEAD
                         <button>Ver más</button>
+=======
+                        <a href="proximamente.html">  <button>Ver más</button></a>
+>>>>>>> 6347bce (l)
                     </div>
                 </div>
 
@@ -68,6 +74,7 @@
                     <div class="content">
                         <div class="name">Entidades</div>
                         <div class="des">Las entidades son manifestaciones que se presentan en la vida de gregor a medida que pasa la historia</div>
+<<<<<<< HEAD
                         <button>Ver más</button>
                     </div>
                 </div>
@@ -77,6 +84,17 @@
                         <div class="name">Alguien más...</div>
                         <div class="des">¿Quién eres?</div>
                         <button>Ver más</button>
+=======
+                        <a href="proximamente.html">  <button>Ver más</button></a>
+                    </div>
+                </div>
+
+                <div class="slide-item" style="background-image: url('NIVEL.png');">
+                    <div class="content">
+                        <div class="name">Algo mas...</div>
+                        <div class="des">¿Quién eres?</div>
+                        <a href="proximamente.html">  <button>Ver más</button></a>
+>>>>>>> 6347bce (l)
                     </div>
                 </div>
             </div> 
@@ -112,6 +130,7 @@
                     <li>David Rivera</li>
                     <li>Steven Monroy</li>
                     <li>Alexander Cano</li>
+                    <li>Juan Morales Yara</li>
                 </ul>
             </div>
 
@@ -139,7 +158,9 @@
     <div id="chat">
         <div class="encabezado">
             <span>Chat</span>
-            <button onclick="cerrarChat()">✖</button>
+            <button onclick="cerrarChat()" class="x" >
+    <i class="fa-notdog fa-solid fa-xmark"></i>
+</button>
         </div>
 
         <div class="mensajes" id="mensajes">
@@ -149,11 +170,11 @@
         <div class="entrada">
             <input
                 type="text"
-                id="mensaje"
+                id="mensajes"
                 placeholder="Escribe un mensaje..."
                 onkeydown="if(event.key==='Enter') enviarMensaje()">
 
-            <button onclick="enviarMensaje()">Enviar</button>
+            <button onclick="enviarMensaje()" class="er"><i class="fa-pixel fa-regular fa-paper-plane"></i></button>
         </div>
     </div>
 

@@ -10,6 +10,8 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use(express.static("."));
+
 const groq = new Groq({
     apiKey: process.env.GROQ_API_KEY,
 });
@@ -23,7 +25,7 @@ app.post("/chat", async (req, res) => {
                     content: req.body.mensaje,
                 },
             ],
-            model: "llama-3.1-8b-instant",
+            model: "openai/gpt-oss-20b",
         });
 
         res.json({
@@ -31,13 +33,16 @@ app.post("/chat", async (req, res) => {
         });
 
     } catch (error) {
-        console.error(error);
+        console.error("ERROR COMPLETO:", error);
+        console.error("MENSAJE:", error.message);
+
         res.status(500).json({
-            error: error.message,
+            error: error.message
         });
     }
 });
 
-app.listen(3000, () => {
+app.listen(3000, "0.0.0.0", () => {
     console.log("Servidor iniciado en http://localhost:3000");
 });
+

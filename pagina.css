@@ -28,6 +28,7 @@ body {
     top: 0;
     z-index: 1000;
     border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+    height: 70px;
 }
 
 .logo {
@@ -113,7 +114,7 @@ main {
 
 /* PANEL DE TEXTO Y CONTENIDO */
 .slide-item .content {
-    width: 480px;
+    width: 300px;
     max-width: 90%;
     background: rgba(13, 17, 23, 0.88);
     backdrop-filter: blur(8px);
@@ -131,6 +132,7 @@ main {
     letter-spacing: 2px;
     text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
     margin-bottom: 8px;
+    text-align: center;
 }
 
 .content .des {
@@ -138,23 +140,25 @@ main {
     line-height: 1.5;
     color: #e2e8f0;
     margin-bottom: 18px;
+    text-align: center;
 }
 
 .content button {
     padding: 10px 22px;
     border: none;
     cursor: pointer;
-    background: linear-gradient(135deg, #38bdf8, #0284c7);
+    background: #4d6e78;
     color: #0f172a;
     font-weight: 700;
     font-size: 14px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
     transition: all 0.3s ease;
+    margin-left: 70PX;
 }
 
 .content button:hover {
-    background: linear-gradient(135deg, #7dd3fc, #38bdf8);
+    background: #74a4b3;
     transform: translateY(-2px);
     box-shadow: 0 0 22px rgba(56, 189, 248, 0.8);
 }
@@ -247,7 +251,7 @@ main {
     right: 20px;
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg,#072124,#0066ff);
+    background: linear-gradient(135deg,#3b3346,#816f8a);
     color: white;
     box-shadow: 0 0 20px #072124;
     border-radius: 50%;
@@ -307,12 +311,15 @@ main {
 
 .entrada input{
     flex: 1;
-    background: #111827;
+    background: none;
     color: white;
-    border: none;
+    border: solid #918d99;
     padding: 12px;
     outline: none;
-    border-radius: 15px;
+    border-radius: 12px;
+    height: 40px;
+    
+    margin-top: 4px;
 }
 
 .entrada input::placeholder{
@@ -322,7 +329,7 @@ main {
 
 
 .entrada button{
-    height: 50px;
+    height: 40px;
     border: none;
     background: #00e5ff;
     color: #000;
@@ -330,11 +337,13 @@ main {
     padding:0 18px;
     font-weight: bold;
     transition: 3s;
-    border-radius: 15px;
+    border-radius: 6px;
+    margin-top: 4px;
+    margin-right: 4px;
 }
 
 .entrada button:hover{
-    background: #7c3aed;
+    background: #000952;
     color: white;
 }
 
@@ -373,7 +382,7 @@ main {
     width: 80%;
     max-width: 550px;
 
-    box-shadow: 0 0 30px #8b0000;
+    box-shadow: 0 0 30px #005e86; 
 
 }
 
@@ -382,7 +391,7 @@ main {
 
 .m h1 {
 
-    color: #d00000;
+    color: #57b6e2;
 
     font-size: 40px;
 
@@ -414,7 +423,7 @@ main {
 
     padding: 12px 30px;
 
-    background-color: #8b0000;
+    background-color: #38bdf8; ;
 
     color: white;
 
@@ -431,9 +440,9 @@ main {
 
 .boton-volver:hover {
 
-    background-color: #d00000;
+    background-color: #165c7a; ;
 
-    box-shadow: 0 0 15px #d00000;
+    box-shadow: 0 0 15px #004a69; ;
 
 }
 
@@ -614,3 +623,18 @@ main {
     }
 
 }
+
+#ch{
+    width: 60px;
+    
+}
+
+
+.x{
+    
+    background: none;
+    border: none;
+    font-size: 20px;
+    margin-right: 10px;
+}
+

@@ -92,4 +92,4 @@ function mostrarProximamente() {
 
 function cerrarProximamente() {
     document.getElementById("proximamente").style.display = "none";
-}
+}   
