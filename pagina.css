@@ -638,3 +638,14 @@ main {
     margin-right: 10px;
 }
 
+
+
+a.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #25212e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-left: 65px;
+}

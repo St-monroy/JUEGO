@@ -19,9 +19,10 @@
 
 <body>
 
-    <!-- BARRA DE NAVEGACIÓN -->
+  
     <header class="navbar">
-<img src="ChatGPT Image Aug 21, 2026, 07_52_27 AM (1).png" id="ch">
+<img src="hola.png" id="ch" alt="Personaje del proyecto">
+
         <nav id="menu">
             <ul>
                 <li>
@@ -50,8 +51,7 @@
 
                         <div class="name">Gregor</div>
                         <div class="des">Gregor es un muchacho que vive con sus padres, este termina experimentando cosas que lo cambiarán de por vida</div>
-                      <a href="proximamente.html">  <button>Ver más</button></a>
-
+                      <a href="proximamente.html" class="boton">Ver más</a>
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@
                         <div class="des">Los padres de gregor tienen un papel crucial en la historia por ser el pilar principal en la vida de gregor</div>
 
 
-                        <a href="proximamente.html">  <button>Ver más</button></a>
+                       <a href="proximamente.html" class="boton">Ver más</a>
 
                     </div>
                 </div>
@@ -71,7 +71,7 @@
                         <div class="name">Entidades</div>
                         <div class="des">Las entidades son manifestaciones que se presentan en la vida de gregor a medida que pasa la historia</div>
 
-                        <button>Ver más</button>
+                      <a href="proximamente.html" class="boton">Ver más</a>
                     </div>
                 </div>
 
@@ -81,7 +81,7 @@
                     <div class="content">
                         <div class="name">Algo mas...</div>
                         <div class="des">¿Quién eres?</div>
-                        <a href="proximamente.html">  <button>Ver más</button></a>
+                       <a href="proximamente.html" class="boton">Ver más</a>
 
                     </div>
                 </div>
@@ -109,7 +109,42 @@
 
 
 
-    <footer class="footer">
+  
+     
+
+    <!-- Botón flotante -->
+    <div id="boton-chat" onclick="abrirChat()">
+        💬
+    </div>
+
+    <!-- Ventana del chat -->
+    <div id="chat">
+        <div class="encabezado">
+            <span>Chat</span>
+            <button onclick="cerrarChat()" class="x" >
+    <i class="fa-notdog fa-solid fa-xmark"></i>
+</button>
+        </div>
+
+        <div class="mensajes" id="mensajes">
+            <p><strong>IA:</strong> Hola, ¿en qué puedo ayudarte?</p>
+        </div>
+
+        <div class="entrada">
+            <input
+                type="text"
+                id="mensaje"
+                placeholder="Escribe un mensaje..."
+                onkeydown="if(event.key==='Enter') enviarMensaje()">
+
+            <button onclick="enviarMensaje()" class="er"><i class="fa-pixel fa-regular fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+
+
+
+     <footer class="footer">
         <div class="footer-box">
             <div class="columna">
                 <h3>Equipo</h3>
@@ -136,35 +171,5 @@
         </div>
 
        </footer>
-
-    <!-- Botón flotante -->
-    <div id="boton-chat" onclick="abrirChat()">
-        💬
-    </div>
-
-    <!-- Ventana del chat -->
-    <div id="chat">
-        <div class="encabezado">
-            <span>Chat</span>
-            <button onclick="cerrarChat()" class="x" >
-    <i class="fa-notdog fa-solid fa-xmark"></i>
-</button>
-        </div>
-
-        <div class="mensajes" id="mensajes">
-            <p><strong>IA:</strong> Hola, ¿en qué puedo ayudarte?</p>
-        </div>
-
-        <div class="entrada">
-            <input
-                type="text"
-                id="mensajes"
-                placeholder="Escribe un mensaje..."
-                onkeydown="if(event.key==='Enter') enviarMensaje()">
-
-            <button onclick="enviarMensaje()" class="er"><i class="fa-pixel fa-regular fa-paper-plane"></i></button>
-        </div>
-    </div>
-
 </body>
 </html>
