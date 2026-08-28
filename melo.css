@@ -166,8 +166,9 @@ body {
 
 /* BOTÓN DE ENVIAR */
 #btnEnviar {
-    width: 100%;
-    padding: 12px;
+    height: 40px;
+    width: 180px;
+
     background: #10b981;
     color: #ffffff;
     font-size: 16px;
@@ -187,6 +188,21 @@ body {
     transform: scale(0.98);
 }
 
+
+#h{
+    height: 40px;
+    width: 180px;
+    
+    background: #10b981;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    margin-top: 7px;
+
+
+}
 
 .mensaje-exito {
     display: none; 
