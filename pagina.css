@@ -85,7 +85,7 @@ main {
     position: relative;
     width: 90vw;
     max-width: 1200px;
-    height: 65vh;
+    height: 85vh;
     min-height: 480px;
     border-radius: 20px;
     overflow: hidden;
@@ -112,7 +112,7 @@ main {
     padding: 40px;
 }
 
-/* PANEL DE TEXTO Y CONTENIDO */
+
 .slide-item .content {
     width: 300px;
     max-width: 90%;
@@ -193,12 +193,12 @@ main {
     transform: scale(1.1);
 }
 
-/* FOOTER */
+
 .footer {
     background-color: #0f172a;
     border-top: 2px solid #38bdf8;
     color: #ffffff;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-bottom: 30px;
     margin-top: auto;
     width: 100%;
@@ -223,6 +223,14 @@ main {
     font-family: "Tiny5", sans-serif;
     font-size: 22px;
     margin-bottom: 12px;
+}
+
+.columna h1{
+     color: #38bdf8;
+    font-family: "Tiny5", sans-serif;
+    font-size: 22px;
+    margin-bottom: 12px;
+
 }
 
 .columna ul {
@@ -648,4 +656,9 @@ a.boton {
     text-decoration: none;
     border-radius: 8px;
     margin-left: 65px;
+}
+
+.botones{
+    display:flex ;
+    gap: 10px;
 }
