@@ -116,8 +116,8 @@ main {
 .slide-item .content {
     width: 300px;
     max-width: 60%;
-    background: rgba(13, 17, 23, 0.88);
-    backdrop-filter: blur(8px);
+    background: transparent;
+
     padding: 28px;
     border-radius: 16px;
     border: 1px solid rgba(56, 189, 248, 0.3);
