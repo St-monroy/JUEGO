@@ -572,7 +572,7 @@ main {
     .boton {
         display: block;
         width: 80%;
-        margin: 15px auto 0;
+        margin:  auto ;
         padding: 10px;
         font-size: 15px;
         text-align: center;
@@ -614,7 +614,7 @@ main {
 
     /* Menú */
     #menu ul {
-        gap: 5px;
+        gap: 10px;
     }
 
     #menu ul li a {
