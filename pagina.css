@@ -571,7 +571,7 @@ main {
 
     .boton {
         display: block;
-        width: 80%;
+        width: 90%;
         margin:  auto ;
         padding: 10px;
         font-size: 15px;
@@ -609,7 +609,7 @@ main {
 
     /* Logo */
     #ch {
-        width: 105px;
+        width: 100px;
     }
 
     /* Menú */
@@ -699,12 +699,13 @@ a.boton {
     text-align: center;
     text-decoration: none;
     border-radius: 20px;
+    
 
 
  
 }
 
-.botones{
+.boton{
     display:flex ;
     gap: 5px;
 }
