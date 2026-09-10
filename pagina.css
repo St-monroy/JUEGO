@@ -482,34 +482,32 @@ main {
 }
 
 
-
 /* =====================================
-   ADAPTACIÓN PARA CELULARES
+   CELULARES
    ===================================== */
 
 @media screen and (max-width: 600px) {
 
-    /* Barra de navegación */
+    /* NAVBAR */
+
     .navbar {
         padding: 10px;
         flex-direction: column;
-        gap: 10px;
+        gap: 8px;
     }
 
-    /* Logo SSRCM */
     #ch {
-        width: 120px;
+        width: 110px;
         height: auto;
     }
 
-    /* Menú */
     #menu ul {
         padding: 0;
         margin: 0;
-        gap: 10px;
+        gap: 8px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     #menu ul li {
@@ -528,39 +526,43 @@ main {
 
     .slider-wrapper {
         width: 90%;
-        height: 75vh;
-        margin: 30px auto;
+        height: 650px;
+        margin: 25px auto;
         overflow: hidden;
     }
 
     .slide-item {
         min-width: 100%;
-        height: 75vh;
+        height: 650px;
+
         background-position: center;
         background-size: cover;
     }
 
 
     /* =====================================
-       TARJETA DE INFORMACIÓN
+       TARJETA
        ===================================== */
 
     .content {
-        width: 75%;
+        width: 70%;
         left: 50%;
-        bottom: 70px;
+        bottom: 75px;
+
         transform: translateX(-50%);
+
         padding: 20px;
         text-align: center;
     }
 
     .content .name {
         font-size: 28px;
+        margin-bottom: 12px;
     }
 
     .content .des {
         font-size: 14px;
-        line-height: 1.5;
+        line-height: 1.45;
         max-width: 100%;
     }
 
@@ -571,9 +573,12 @@ main {
 
     .boton {
         display: block;
-        width: 90%;
-        margin:  auto ;
-        padding: 10px;
+
+        width: 65%;
+        margin: 15px auto 0;
+
+        padding: 10px 15px;
+
         font-size: 15px;
         text-align: center;
     }
@@ -589,9 +594,24 @@ main {
     }
 
     .button button {
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
         font-size: 14px;
+    }
+
+
+    /* =====================================
+       CHAT
+       ===================================== */
+
+    #boton-chat {
+        width: 58px;
+        height: 58px;
+
+        right: 12px;
+        bottom: 12px;
+
+        font-size: 25px;
     }
 }
 
@@ -602,19 +622,19 @@ main {
 
 @media screen and (max-width: 480px) {
 
+    /* NAVBAR */
+
     .navbar {
         padding: 8px;
-        gap: 8px;
+        gap: 6px;
     }
 
-    /* Logo */
     #ch {
         width: 100px;
     }
 
-    /* Menú */
     #menu ul {
-        gap: 10px;
+        gap: 5px;
     }
 
     #menu ul li a {
@@ -623,24 +643,28 @@ main {
     }
 
 
-    /* Slider */
+    /* SLIDER */
+
     .slider-wrapper {
         width: 90%;
-        height: 70vh;
-        margin: 25px auto;
+        height: 620px;
+        margin: 20px auto;
     }
 
     .slide-item {
-        height: 70vh;
+        height: 620px;
     }
 
 
-    /* Tarjeta */
+    /* TARJETA */
+
     .content {
-        width: 75%;
+        width: 72%;
         left: 50%;
-        bottom: 60px;
+        bottom: 65px;
+
         transform: translateX(-50%);
+
         padding: 18px;
     }
 
@@ -654,22 +678,38 @@ main {
     }
 
 
-    /* Ver más */
+    /* BOTÓN */
+
     .boton {
-        width: 80%;
-        padding: 9px;
+        width: 65%;
+        padding: 9px 12px;
         font-size: 14px;
     }
 
 
-    /* Flechas */
+    /* FLECHAS */
+
     .button {
-        bottom: 10px;
+        bottom: 12px;
+        right: 12px;
     }
 
     .button button {
-        width: 35px;
-        height: 35px;
+        width: 38px;
+        height: 38px;
+    }
+
+
+    /* CHAT */
+
+    #boton-chat {
+        width: 52px;
+        height: 52px;
+
+        right: 10px;
+        bottom: 10px;
+
+        font-size: 22px;
     }
 }
 
@@ -705,7 +745,7 @@ a.boton {
  
 }
 
-.boton{
+.botones{
     display:flex ;
     gap: 5px;
 }
