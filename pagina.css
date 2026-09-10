@@ -669,12 +669,12 @@ main {
     }
 
     .content .name {
-        font-size: 24px;
+        font-size:12px;
     }
 
     .content .des {
         font-size: 13px;
-        line-height: 1.4;
+        line-height:1;
     }
 
 
@@ -682,7 +682,7 @@ main {
 
     .boton {
         width: 65%;
-        padding: 9px 12px;
+        padding: 6px 6px;
         font-size: 14px;
     }
 
