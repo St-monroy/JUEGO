@@ -491,19 +491,22 @@ main {
 
     /* Barra de navegación */
     .navbar {
-        padding: 5px;
+        padding: 10px;
         flex-direction: column;
-        gap: 15px;
+        gap: 10px;
     }
 
-    .logo {
-        font-size: 20px;
+    /* Logo SSRCM */
+    #ch {
+        width: 120px;
+        height: auto;
     }
 
+    /* Menú */
     #menu ul {
         padding: 0;
         margin: 0;
-        gap: 15px;
+        gap: 10px;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -514,34 +517,45 @@ main {
     }
 
     #menu ul li a {
-        font-size: 14px;
+        font-size: 15px;
+        padding: 8px 10px;
     }
 
 
-    /* Slider */
+    /* =====================================
+       SLIDER
+       ===================================== */
+
     .slider-wrapper {
-        width: 100%;
-        height: 80vh;
+        width: 90%;
+        height: 75vh;
+        margin: 30px auto;
         overflow: hidden;
     }
 
     .slide-item {
         min-width: 100%;
-        height: 80vh;
+        height: 75vh;
         background-position: center;
         background-size: cover;
     }
 
 
-    /* Contenido del juego */
+    /* =====================================
+       TARJETA DE INFORMACIÓN
+       ===================================== */
+
     .content {
-        width: 90%;
-        left: 5%;
-        bottom: 80px;
+        width: 75%;
+        left: 50%;
+        bottom: 70px;
+        transform: translateX(-50%);
+        padding: 20px;
+        text-align: center;
     }
 
     .content .name {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .content .des {
@@ -551,16 +565,27 @@ main {
     }
 
 
-    /* Botón Jugar */
-    .boton-jugar {
-        padding: 12px 25px;
+    /* =====================================
+       BOTÓN VER MÁS
+       ===================================== */
+
+    .boton {
+        display: block;
+        width: 80%;
+        margin: 15px auto 0;
+        padding: 10px;
         font-size: 15px;
+        text-align: center;
     }
 
 
-    /* Botones anterior y siguiente */
+    /* =====================================
+       FLECHAS
+       ===================================== */
+
     .button {
-        bottom: 20px;
+        bottom: 15px;
+        right: 15px;
     }
 
     .button button {
@@ -578,35 +603,45 @@ main {
 @media screen and (max-width: 480px) {
 
     .navbar {
-        padding: 12px;
+        padding: 8px;
+        gap: 8px;
     }
 
-    .logo {
-        font-size: 20px;
+    /* Logo */
+    #ch {
+        width: 105px;
     }
 
+    /* Menú */
     #menu ul {
-        gap: 10px;
+        gap: 5px;
     }
 
     #menu ul li a {
         font-size: 13px;
+        padding: 7px 8px;
     }
 
 
+    /* Slider */
     .slider-wrapper {
-        height: 75vh;
+        width: 90%;
+        height: 70vh;
+        margin: 25px auto;
     }
 
     .slide-item {
-        height: 75vh;
+        height: 70vh;
     }
 
 
+    /* Tarjeta */
     .content {
-        width: 90%;
-        left: 5%;
-        bottom: 70px;
+        width: 75%;
+        left: 50%;
+        bottom: 60px;
+        transform: translateX(-50%);
+        padding: 18px;
     }
 
     .content .name {
@@ -618,18 +653,24 @@ main {
         line-height: 1.4;
     }
 
-    .boton-jugar {
-        padding: 10px 20px;
+
+    /* Ver más */
+    .boton {
+        width: 80%;
+        padding: 9px;
         font-size: 14px;
     }
 
 
     /* Flechas */
+    .button {
+        bottom: 10px;
+    }
+
     .button button {
         width: 35px;
         height: 35px;
     }
-
 }
 
 #ch{
@@ -654,11 +695,11 @@ a.boton {
     padding: 10px;
     background-color:#25212e;
     color: white;
-    width:120px;
+    width:230px;
     text-align: center;
     text-decoration: none;
     border-radius: 20px;
-    margin-left:65px;
+
 
  
 }
