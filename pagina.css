@@ -9,7 +9,7 @@
 
 body {
     background: radial-gradient(#0d0f17, #05070a);
-    min-height: 120vh;
+    min-height: 100vh;
     color: #e2e8f0;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ body {
 
 .logo a {
     color: #ffffff;
-    font-size: 50px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     letter-spacing: 1px;
@@ -53,15 +53,15 @@ body {
 #menu ul {
     display: flex;
     list-style: none;
-    gap: 10px;
+    gap: 20px;
 }
 
 #menu a {
     color: #e2e8f0;
     text-decoration: none;
-    padding: 8px 8px;
+    padding: 8px 16px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     border-radius: 6px;
     transition: all 0.3s ease;
 }
@@ -383,12 +383,12 @@ main {
 
     background-color: #151515;
 
-    padding: 10px;
+    padding: 45px;
 
     border-radius: 15px;
 
-    width: 90%;
-    max-width: 450px;
+    width: 80%;
+    max-width: 550px;
 
     box-shadow: 0 0 30px #005e86; 
 
@@ -401,7 +401,7 @@ main {
 
     color: #57b6e2;
 
-    font-size: 20px;
+    font-size: 40px;
 
     margin-bottom: 20px;
 
@@ -414,9 +414,9 @@ main {
 
     color: #cccccc;
 
-    font-size:10px;
+    font-size: 18px;
 
-    margin:auto;
+    margin: 10px 0;
 
 }
 
@@ -482,32 +482,31 @@ main {
 }
 
 
+
 /* =====================================
-   CELULARES
+   ADAPTACIÓN PARA CELULARES
    ===================================== */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
 
-    /* NAVBAR */
-
+    /* Barra de navegación */
     .navbar {
-        padding: 10px;
+        padding: 15px;
         flex-direction: column;
-        gap: 8px;
+        gap: 15px;
     }
 
-    #ch {
-        width: 110px;
-        height: auto;
+    .logo {
+        font-size: 25px;
     }
 
     #menu ul {
         padding: 0;
         margin: 0;
-        gap: 8px;
+        gap: 15px;
         display: flex;
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     #menu ul li {
@@ -515,103 +514,59 @@ main {
     }
 
     #menu ul li a {
-        font-size: 15px;
-        padding: 8px 10px;
+        font-size: 14px;
     }
 
 
-    /* =====================================
-       SLIDER
-       ===================================== */
-
+    /* Slider */
     .slider-wrapper {
-        width: 90%;
-        height: 650px;
-        margin: 25px auto;
+        width: 100%;
+        height: 80vh;
         overflow: hidden;
     }
 
     .slide-item {
         min-width: 100%;
-        height: 650px;
-
+        height: 80vh;
         background-position: center;
         background-size: cover;
     }
 
 
-    /* =====================================
-       TARJETA
-       ===================================== */
-
+    /* Contenido del juego */
     .content {
-        width: 70%;
-        left: 50%;
-        bottom: 75px;
-
-        transform: translateX(-50%);
-
-        padding: 20px;
-        text-align: center;
+        width: 90%;
+        left: 5%;
+        bottom: 80px;
     }
 
     .content .name {
-        font-size: 28px;
-        margin-bottom: 12px;
+        font-size: 30px;
     }
 
     .content .des {
         font-size: 14px;
-        line-height: 1.45;
+        line-height: 1.5;
         max-width: 100%;
     }
 
 
-    /* =====================================
-       BOTÓN VER MÁS
-       ===================================== */
-
-    .boton {
-        display: block;
-
-        width: 65%;
-        margin: 15px auto 0;
-
-        padding: 10px 15px;
-
+    /* Botón Jugar */
+    .boton-jugar {
+        padding: 12px 25px;
         font-size: 15px;
-        text-align: center;
     }
 
 
-    /* =====================================
-       FLECHAS
-       ===================================== */
-
+    /* Botones anterior y siguiente */
     .button {
-        bottom: 15px;
-        right: 15px;
+        bottom: 20px;
     }
 
     .button button {
-        width: 42px;
-        height: 42px;
+        width: 40px;
+        height: 40px;
         font-size: 14px;
-    }
-
-
-    /* =====================================
-       CHAT
-       ===================================== */
-
-    #boton-chat {
-        width: 58px;
-        height: 58px;
-
-        right: 12px;
-        bottom: 12px;
-
-        font-size: 25px;
     }
 }
 
@@ -622,100 +577,63 @@ main {
 
 @media screen and (max-width: 480px) {
 
-    /* NAVBAR */
-
     .navbar {
-        padding: 8px;
-        gap: 6px;
+        padding: 10px;
     }
 
-    #ch {
-        width: 100px;
+    .logo {
+        font-size: 22px;
     }
 
     #menu ul {
-        gap: 5px;
+        gap: 10px;
     }
 
     #menu ul li a {
         font-size: 13px;
-        padding: 7px 8px;
     }
 
 
-    /* SLIDER */
-
     .slider-wrapper {
-        width: 90%;
-        height: 620px;
-        margin: 20px auto;
+        height: 75vh;
     }
 
     .slide-item {
-        height: 620px;
+        height: 75vh;
     }
 
 
-    /* TARJETA */
-
     .content {
-        width: 72%;
-        left: 50%;
-        bottom: 65px;
-
-        transform: translateX(-50%);
-
-        padding: 18px;
+        width: 90%;
+        left: 5%;
+        bottom: 70px;
     }
 
     .content .name {
-        font-size:12px;
+        font-size: 24px;
     }
 
     .content .des {
         font-size: 13px;
-        line-height:1;
+        line-height: 1.4;
     }
 
-
-    /* BOTÓN */
-
-    .boton {
-        width: 65%;
-        padding: 6px 6px;
+    .boton-jugar {
+        padding: 10px 20px;
         font-size: 14px;
     }
 
 
-    /* FLECHAS */
-
-    .button {
-        bottom: 12px;
-        right: 12px;
-    }
-
+    /* Flechas */
     .button button {
-        width: 38px;
-        height: 38px;
+        width: 35px;
+        height: 35px;
     }
 
-
-    /* CHAT */
-
-    #boton-chat {
-        width: 52px;
-        height: 52px;
-
-        right: 10px;
-        bottom: 10px;
-
-        font-size: 22px;
-    }
 }
 
 #ch{
-    width:70px;
-   
+    width: 60px;
     
 }
 
@@ -732,21 +650,15 @@ main {
 
 a.boton {
     display: inline-block;
-    padding: 10px;
-    background-color:#25212e;
+    padding: 10px 20px;
+    background-color: #25212e;
     color: white;
-    width:100px;
-    text-align: center;
     text-decoration: none;
-    border-radius: 20px;
-
-    
-
-
- 
+    border-radius: 8px;
+    margin-left: 65px;
 }
 
 .botones{
     display:flex ;
-    gap: 5px;
+    gap: 10px;
 }
