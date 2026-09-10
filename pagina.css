@@ -53,15 +53,15 @@ body {
 #menu ul {
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 10px;
 }
 
 #menu a {
     color: #e2e8f0;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 8px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 6px;
     transition: all 0.3s ease;
 }
@@ -491,7 +491,7 @@ main {
 
     /* Barra de navegación */
     .navbar {
-        padding: 15px;
+        padding: 5px;
         flex-direction: column;
         gap: 15px;
     }
@@ -578,11 +578,11 @@ main {
 @media screen and (max-width: 480px) {
 
     .navbar {
-        padding: 10px;
+        padding: 12px;
     }
 
     .logo {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     #menu ul {
@@ -633,7 +633,7 @@ main {
 }
 
 #ch{
-    width: 100px;
+    width: 120px;
    
     
 }
@@ -658,10 +658,10 @@ a.boton {
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 .botones{
     display:flex ;
-    gap: 10px;
+    gap: 5px;
 }
