@@ -633,7 +633,7 @@ main {
 }
 
 #ch{
-    width: 110px;
+    width: 105px;
    
     
 }
@@ -654,11 +654,11 @@ a.boton {
     padding: 10px;
     background-color: #25212e;
     color: white;
-    width:180px;
+    width:250px;
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
-    margin-left: 25px;
+ 
 }
 
 .botones{
