@@ -383,12 +383,12 @@ main {
 
     background-color: #151515;
 
-    padding: 45px;
+    padding: 10px;
 
     border-radius: 15px;
 
-    width: 80%;
-    max-width: 550px;
+    width: 90%;
+    max-width: 450px;
 
     box-shadow: 0 0 30px #005e86; 
 
@@ -497,7 +497,7 @@ main {
     }
 
     .logo {
-        font-size: 200000px;
+        font-size: 20px;
     }
 
     #menu ul {
@@ -633,7 +633,8 @@ main {
 }
 
 #ch{
-    width: 60px;
+    width: 100px;
+   
     
 }
 
@@ -653,9 +654,11 @@ a.boton {
     padding: 10px 20px;
     background-color: #25212e;
     color: white;
+    width:200px;
+    text-align: center;
     text-decoration: none;
-    border-radius: 8px;
-    margin-left: 65px;
+    border-radius: 10px;
+    margin-left: 10px;
 }
 
 .botones{
