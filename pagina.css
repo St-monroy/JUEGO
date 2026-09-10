@@ -652,12 +652,12 @@ main {
 a.boton {
     display: inline-block;
     padding: 10px;
-    background-color: #25212e;
+    background-color:#25212e;
     color: white;
     width:120px;
     text-align: center;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-left:65px;
 
  
