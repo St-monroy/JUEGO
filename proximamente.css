@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family:
+        'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #111827 0%,
+            #080c14 50%,
+            #05070a 100%
+        );
+
+    color: white;
+
+    overflow-x: hidden;
+}
+
+
+/* =========================================
+   PÁGINA
+========================================= */
+
+.proximamente-pagina {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   EFECTO DE LUZ DE FONDO
+========================================= */
+
+.proximamente-pagina::before {
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(24, 185, 237, .12) 0%,
+            rgba(24, 185, 237, .04) 40%,
+            transparent 70%
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   TARJETA
+========================================= */
+
+.m {
+    position: relative;
+
+    width: min(850px, 95%);
+
+    padding: 70px 60px;
+
+    text-align: center;
+
+    background:
+        rgba(13, 17, 23, .94);
+
+    border:
+        1px solid rgba(24, 185, 237, .45);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 0 25px rgba(24, 185, 237, .15),
+        0 0 70px rgba(24, 185, 237, .08);
+
+    backdrop-filter: blur(10px);
+
+    overflow: hidden;
+
+    animation:
+        aparecer .8s ease forwards;
+}
+
+
+/* =========================================
+   LÍNEA SUPERIOR
+========================================= */
+
+.m::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background: #18b9ed;
+
+    box-shadow:
+        0 0 12px #18b9ed,
+        0 0 25px rgba(24, 185, 237, .5);
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.m h1 {
+
+    font-family:
+        "Tiny5",
+        sans-serif;
+
+    font-size:
+        clamp(42px, 7vw, 75px);
+
+    letter-spacing: 3px;
+
+    color: #38bdf8;
+
+    text-shadow:
+        0 0 10px rgba(56, 189, 248, .7),
+        0 0 25px rgba(56, 189, 248, .35);
+
+    margin-bottom: 30px;
+
+    line-height: 1.1;
+}
+
+
+/* =========================================
+   TEXTOS
+========================================= */
+
+.m p {
+
+    max-width: 620px;
+
+    margin: 0 auto 12px;
+
+    color: #cbd5e1;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+.m p:last-of-type {
+
+    margin-bottom: 35px;
+
+}
+
+
+/* =========================================
+   BOTÓN VOLVER
+========================================= */
+
+.boton-volver {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 150px;
+
+    padding: 13px 30px;
+
+    background: #10182d;
+
+    border:
+        1px solid #18b9ed;
+
+    border-radius: 25px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition:
+        .3s ease;
+}
+
+
+.boton-volver:hover {
+
+    background: #18b9ed;
+
+    color: #07101e;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(24, 185, 237, .55);
+}
+
+
+/* =========================================
+   EFECTO HOVER TARJETA
+========================================= */
+
+.m:hover {
+
+    border-color:
+        rgba(24, 185, 237, .7);
+
+    box-shadow:
+        0 0 35px rgba(24, 185, 237, .2),
+        0 0 80px rgba(24, 185, 237, .1);
+}
+
+
+/* =========================================
+   ANIMACIÓN
+========================================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(25px)
+            scale(.97);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .proximamente-pagina {
+
+        padding: 20px;
+    }
+
+
+    .m {
+
+        width: 100%;
+
+        max-width: 650px;
+
+        padding:
+            55px 35px;
+
+        border-radius: 20px;
+    }
+
+
+    .m h1 {
+
+        font-size:
+            clamp(38px, 8vw, 60px);
+
+        letter-spacing: 2px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .m p {
+
+        font-size: 16px;
+
+        line-height: 1.6;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES
+========================================= */
+
+@media screen and (max-width: 480px) {
+
+    .proximamente-pagina {
+
+        min-height: 100vh;
+
+        padding: 15px;
+    }
+
+
+    .m {
+
+        width: 100%;
+
+        padding:
+            45px 20px;
+
+        border-radius: 18px;
+    }
+
+
+    .m h1 {
+
+        font-size:
+            38px;
+
+        letter-spacing:
+            1px;
+
+        margin-bottom:
+            22px;
+    }
+
+
+    .m p {
+
+        font-size:
+            14px;
+
+        line-height:
+            1.6;
+
+        margin-bottom:
+            10px;
+    }
+
+
+    .m p:last-of-type {
+
+        margin-bottom:
+            28px;
+    }
+
+
+    .boton-volver {
+
+        width:
+            100%;
+
+        max-width:
+            220px;
+
+        padding:
+            12px 20px;
+
+        font-size:
+            14px;
+    }
+
+}
+
+
+/* =========================================
+   CELULARES MUY PEQUEÑOS
+========================================= */
+
+@media screen and (max-width: 360px) {
+
+    .m {
+
+        padding:
+            38px 16px;
+    }
+
+
+    .m h1 {
+
+        font-size:
+            32px;
+    }
+
+
+    .m p {
+
+        font-size:
+            13px;
+    }
+
+}

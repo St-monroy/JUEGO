@@ -2,107 +2,301 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <title>SSRCM - Inicio</title>
 
     <link rel="stylesheet" href="pagina.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
 
     <script defer src="movimiento.js"></script>
+
 </head>
 
 <body>
 
-  
-    <header class="navbar">
-<img src="formulario.f.png" id="ch" alt="Personaje del proyecto">
+    <aside class="sidebar">
 
-        <nav id="menu">
-            <ul>
+        <div class="sidebar-header">
+
+            <div class="sidebar-logo">
+
+                <img
+                    src="log.png"
+                    id="ch"
+                    alt="SSRCM"
+                >
+
+                <div class="sidebar-logo-text">
+
+                    <strong>SSRCM</strong>
+
+                    <span>Studios</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sidebar-search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar..."
+                autocomplete="off"
+            >
+
+        </div>
+
+        <nav class="sidebar-menu">
+
+            <ul id="menu-sidebar">
+
+                <li class="active">
+
+                    <a href="index.html">
+
+                        <i class="fa-solid fa-house"></i>
+
+                        <span>Inicio</span>
+
+                    </a>
+
+                </li>
+
                 <li>
-                    <a href="index.html" class="active">Inicio</a>
-                </li>
 
-              
+                    <a href="formulario.html">
+
+                        <i class="fa-solid fa-scroll"></i>
+
+                        <span>Formulario</span>
+
+                    </a>
+
+                </li>
 
                 <li>
-                    <a href="formulario.html">Formulario</a>
-                </li>
-            
 
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdQUm-1DDXSF7wu3OviuBRsnWS-ENWnlynTCfAadYZyj-dTQw/viewform?usp=header"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
 
-                  <li>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdQUm-1DDXSF7wu3OviuBRsnWS-ENWnlynTCfAadYZyj-dTQw/viewform?usp=header">Comentarios</a>
+                        <i class="fa-solid fa-comments"></i>
+
+                        <span>Comentarios</span>
+
+                    </a>
+
                 </li>
+
             </ul>
+
         </nav>
 
-    </header>
+        <div class="sidebar-bottom">
 
+            <div class="game-icon">
 
+                <i class="fa-solid fa-dice-d20"></i>
 
-    <main>
+            </div>
+
+            <span>SSRCM</span>
+
+        </div>
+
+    </aside>
+
+    <main class="contenido-principal">
 
         <div class="slider-wrapper">
+
             <div class="slider-track">
-                <div class="slide-item" style="background-image: url('protagonita.png');">
+
+                <div
+                    class="slide-item"
+                    style="background-image: url('protagonita.png');"
+                >
+
                     <div class="content">
-                    
 
-                        <div class="name">Gregor</div>
-                        <div class="des">Gregor es un muchacho que vive con sus padres, este termina experimentando cosas que lo cambiarán de por vida</div>
-                      <a href="proximamente.html" class="boton">Ver más</a>
-                    </div>
-                </div>
+                        <div class="name">
+                            Gregor
+                        </div>
 
-                <div class="slide-item" style="background-image: url('padres.png');">
-                    <div class="content">
-                        <div class="name">Padres De Gregor</div>
-                        <div class="des">Los padres de gregor tienen un papel crucial en la historia por ser el pilar principal en la vida de gregor</div>
+                        <div class="des">
+                            Gregor es un muchacho que vive con sus padres,
+                            este termina experimentando cosas que lo
+                            cambiarán de por vida.
+                        </div>
 
-
-                       <a href="proximamente.html" class="boton">Ver más</a>
-
-                    </div>
-                </div>
-
-                <div class="slide-item" style="background-image: url('entidades.png');">
-                    <div class="content">
-                        <div class="name">Entidades</div>
-                        <div class="des">Las entidades son manifestaciones que se presentan en la vida de gregor a medida que pasa la historia</div>
-
-                      <a href="proximamente.html" class="boton">Ver más</a>
-                    </div>
-                </div>
-
-                
-
-                <div class="slide-item" style="background-image: url('NIVEL.png');">
-                    <div class="content">
-                        <div class="name">Algo mas...</div>
-                        <div class="des">¿Quién eres?</div>
-                       <a href="proximamente.html" class="boton">Ver más</a>
+                        <a
+                            href="proximamente.html"
+                            class="boton"
+                        >
+                            Ver más
+                        </a>
 
                     </div>
+
                 </div>
-            </div> 
+
+                <div
+                    class="slide-item"
+                    style="background-image: url('padres.png');"
+                >
+
+                    <div class="content">
+
+                        <div class="name">
+                            Padres de Gregor
+                        </div>
+
+                        <div class="des">
+                            Los padres de Gregor tienen un papel crucial
+                            en la historia por ser el pilar principal
+                            en la vida de Gregor.
+                        </div>
+
+                        <a
+                            href="proximamente.html"
+                            class="boton"
+                        >
+                            Ver más
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="slide-item"
+                    style="background-image: url('entidades.png');"
+                >
+
+                    <div class="content">
+
+                        <div class="name">
+                            Entidades
+                        </div>
+
+                        <div class="des">
+                            Las entidades son manifestaciones que se
+                            presentan en la vida de Gregor a medida
+                            que pasa la historia.
+                        </div>
+
+                        <a
+                            href="proximamente.html"
+                            class="boton"
+                        >
+                            Ver más
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div
+                    class="slide-item"
+                    style="background-image: url('NIVEL.png');"
+                >
+
+                    <div class="content">
+
+                        <div class="name">
+                            Algo más...
+                        </div>
+
+                        <div class="des">
+                            ¿Quién eres?
+                        </div>
+
+                        <a
+                            href="proximamente.html"
+                            class="boton"
+                        >
+                            Ver más
+                        </a>
+
+                    </div>
+
+                </div>
+
+              <div class="slide-item slide-video">
+
+    <div class="video-content">
+
+        <video
+            class="video-trailer"
+            controls
+            preload="metadata"
+        >
+
+            <source
+                src="video/trailer.mp4"
+                type="video/mp4"
+            >
+
+            Tu navegador no soporta videos.
+
+        </video>
+
+        <div class="video-overlay">
+
+            <div class="video-titulo">
+                TRÁILER
+            </div>
+
+            
+
+        </div>
+
+    </div>
 
 
-            <!-- BOTONES DEL SLIDER -->
+
+                </div>
+
+            </div>
+
             <div class="button">
 
-                <button class="prev" aria-label="Anterior">
+                <button
+                    class="prev"
+                    type="button"
+                    aria-label="Anterior"
+                >
+
                     <i class="fa-solid fa-arrow-left"></i>
+
                 </button>
 
-                <button class="next" aria-label="Siguiente">
+                <button
+                    class="next"
+                    type="button"
+                    aria-label="Siguiente"
+                >
+
                     <i class="fa-solid fa-arrow-right"></i>
+
                 </button>
 
             </div>
@@ -111,70 +305,131 @@
 
     </main>
 
-
-
-
-  
-     
-
-    <!-- Botón flotante -->
-    <div id="boton-chat" onclick="abrirChat()">
+    <div
+        id="boton-chat"
+        onclick="abrirChat()"
+    >
         💬
     </div>
 
-    <!-- Ventana del chat -->
     <div id="chat">
+
         <div class="encabezado">
-            <span>Chat</span>
-            <button onclick="cerrarChat()" class="x" >
-    <i class="fa-notdog fa-solid fa-xmark"></i>
-</button>
+
+            <span>
+                Chat
+            </span>
+
+            <button
+                onclick="cerrarChat()"
+                class="x"
+                type="button"
+                aria-label="Cerrar"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
         </div>
 
-        <div class="mensajes" id="mensajes">
-            <p><strong>IA:</strong> Hola, ¿en qué puedo ayudarte?</p>
+        <div
+            class="mensajes"
+            id="mensajes"
+        >
+
+            <p>
+
+                <strong>IA:</strong>
+
+                Hola, ¿en qué puedo ayudarte?
+
+            </p>
+
         </div>
 
         <div class="entrada">
+
             <input
                 type="text"
                 id="mensaje"
                 placeholder="Escribe un mensaje..."
-                onkeydown="if(event.key==='Enter') enviarMensaje()">
+                onkeydown="if(event.key==='Enter') enviarMensaje()"
+            >
 
-            <button onclick="enviarMensaje()" class="er"><i class="fa-pixel fa-regular fa-paper-plane"></i></button>
+            <button
+                onclick="enviarMensaje()"
+                class="er"
+                type="button"
+                aria-label="Enviar"
+            >
+
+                <i class="fa-solid fa-paper-plane"></i>
+
+            </button>
+
         </div>
+
     </div>
 
+    <footer class="footer">
 
-
-
-     <footer class="footer">
         <div class="footer-box">
+
             <div class="columna">
-                <h1>Desarrolladores</h1>
+
+                <h1>
+                    Desarrolladores
+                </h1>
+
                 <ul>
+
                     <li>Sebastián Velásquez</li>
                     <li>David Rivera</li>
                     <li>Steven Monroy</li>
                     <li>Alexander Cano</li>
                     <li>Sebastián Morales</li>
+
                 </ul>
+
             </div>
 
             <div class="columna">
-                <h1>Contacto</h1>
-                <p>Tel: +57 300 123 4567</p>
-                <p>Email: contacto@ssrcm.com</p>
-                <p>Bogotá, Colombia</p>
+
+                <h1>
+                    Contacto
+                </h1>
+
+                <p>
+                    Tel: +57 300 123 4567
+                </p>
+
+                <p>
+                    Email: contacto@ssrcm.com
+                </p>
+
+                <p>
+                    Bogotá, Colombia
+                </p>
+
             </div>
 
             <div class="columna">
-                <h1>SSRCM</h1>
-                <p>Proyecto de desarrollo de videojuegos y web.</p>
+
+                <h1>
+                    SSRCM
+                </h1>
+
+                <p>
+                    Proyecto de desarrollo de videojuegos y web.
+                </p>
+
             </div>
+
         </div>
 
-       </footer>
+    </footer>
+
 </body>
+
 </html>
