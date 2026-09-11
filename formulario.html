@@ -18,22 +18,23 @@
         <h2> ¿QUE JUEGOS SON DE TU PREFERENCIA?</h2>
         <p class="subtitulo">Completa los campos para ponernos en contacto. y buscar el juego </p>
 
-        <form id="miFormulario">
+        <form id="miFormulario" action="https://formspree.io/f/mppzkywd" method="POST">
+            <input type="hidden" name="_next" value="https://st-monroy.github.io/JUEGO/">
             <div class="grupo-entrada">
                 <label for="nombre">Nombre Completo *</label>
-                <input type="text" id="nombre" placeholder="Ej. David Rivera">
+                <input name="nombre" type="text" id="nombre" placeholder="Ej. David Rivera">
                 <span class="mensaje-error" id="errorNombre">El nombre es obligatorio.</span>
             </div>
 
             <div class="grupo-entrada">
                 <label for="correo">Correo Electrónico *</label>
-                <input type="email" id="correo" placeholder="ejemplo@correo.com">
+                <input name="email "type="email" id="correo" placeholder="ejemplo@correo.com">
                 <span class="mensaje-error" id="errorCorreo">Introduce un correo válido.</span>
             </div>
 
             <div class="grupo-entrada">
                 <label for="servicio">¿Que Tipo de juego nesecitas?</label>
-                <select id="servicio">
+                <select id="servicio" name="servicio">
                     <option value="web">Terror</option>
                     <option value="movil">Aventura</option>
                     <option value="ia">RPG</option>
@@ -43,7 +44,7 @@
 
             <div class="grupo-entrada">
                 <label for="mensaje">Detalles del Proyecto *</label>
-                <textarea id="mensaje" rows="5" placeholder="Describe brevemente tu idea..."></textarea>
+                <textarea name="mensaje"  id="mensaje" rows="5" placeholder="Describe brevemente tu idea..."></textarea>
                 <div class="contador-letras"><span id="contador">0</span> / 500 letras</div>
                 <span class="mensaje-error" id="errorMensaje">El mensaje debe tener al menos 10 letras.</span>
             </div>
